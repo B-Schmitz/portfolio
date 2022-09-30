@@ -20,8 +20,9 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [React](https://reactjs.org
+- [React](https://reactjs.org)
 - [Styled Components](https://styled-components.com/)
+- [Particles](https://github.com/matteobruni/tsparticles)
 - [TypeScript](https://www.typescriptlang.org/)
 
 ## 🚀 Como executar
@@ -46,7 +47,7 @@ $ npm run dev | yarn run dev
 
 ## 💻 Projeto
 
-Portfolio para apresentar meus projetos de forma organizada e com personalidade.
+Portfólio para apresentar meus projetos de forma organizada e com estilo.
 
 ## 📝 License
 
