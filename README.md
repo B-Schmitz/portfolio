@@ -10,8 +10,6 @@
   <img  src="https://img.shields.io/badge/license-MIT-blueviolet" alt="License"/> 
 </p>
 
-<br>
-
 ## 🧪 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
