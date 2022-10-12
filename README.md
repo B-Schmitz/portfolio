@@ -1,13 +1,11 @@
 ## Deploy
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2185b9f3-ea08-429f-a492-0a870c4c0038/deploy-status)](https://app.netlify.com/sites/bernardoschmitz/deploys)
-
-<p align="center">
-  <img alt="Bernardo Schmitz" src="public/images/logo.png" width="160px">
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2185b9f3-ea08-429f-a492-0a870c4c0038/deploy-status)](https://app.netlify.com/sites/bernardoschmitz/deploys) <p align="center">
+  <img  src="https://img.shields.io/badge/license-MIT-blueviolet" alt="License"/> 
 </p>
 
 <p align="center">
-  <img  src="https://img.shields.io/badge/license-MIT-blueviolet" alt="License"/> 
+  <img alt="Bernardo Schmitz" src="public/images/logo.png" width="160px">
 </p>
 
 <h1 align="center">
