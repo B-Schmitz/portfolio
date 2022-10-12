@@ -36,7 +36,7 @@ $ npm install | yarn
 Execute o projeto
 
 ```bash
-$ npm run dev | yarn run dev
+$ npm run start | yarn start
 ```
 
 ## 💻 Projeto
