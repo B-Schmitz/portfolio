@@ -1,0 +1,14 @@
+.btn {
+  padding: 10px 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  text-transform: uppercase;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.btn:hover {
+  transition: 0.4s;
+  transform: scale(1.15);
+}
