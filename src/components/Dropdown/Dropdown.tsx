@@ -38,7 +38,7 @@ function Dropdown({ isOpen, toggle }: IDropdownProps) {
         </NavLink>
       </NavMenu>
       <NavBtn onClick={toggle}>
-        <Button background={theme.surface} text='Currículo' link='https://drive.google.com/file/d/18wT1srKIM0Lmk9Whi6RgZH8X1DtaiFDb/view?usp=sharing' />
+        <Button background={theme.surface} text='Currículo' link='https://drive.google.com/file/d/1hykLXSWL3SRtCLIEnup0ZEGhyYwY7BZO/view?usp=sharing' />
       </NavBtn>
     </SiderBar>
   );
