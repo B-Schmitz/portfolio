@@ -24,9 +24,9 @@ export const CardLeft = styled.div`
   display: flex;
   
   img {
+    object-fit: cover;
     width: 100%;
     border-radius: 3px;
-
   }
 `;
 

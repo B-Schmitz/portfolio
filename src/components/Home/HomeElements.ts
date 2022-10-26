@@ -83,7 +83,7 @@ export const HomeRight = styled.div`
 
 export const ImageBackground = styled.img`
   height: 320px;
-  width: auto;
+  aspect-ratio: 1;
   background-color: ${theme.background};
   opacity: 0.8;
   border-radius: 100%;

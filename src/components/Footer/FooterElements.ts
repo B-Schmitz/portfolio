@@ -30,11 +30,11 @@ export const FooterSection = styled.footer`
   }
  li > a, li > i {
     font-size: 2rem;
-    color: ${theme.background};
+    color: ${theme.white};
     transition: 0.3s ease-in;
     cursor: pointer;
     &:hover {
-      color: ${theme.white};
+      color: ${theme.onSurface};
     }
     @media screen and (max-width: 550px) {
       font-size: 1.5rem;
