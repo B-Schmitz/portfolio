@@ -8,6 +8,7 @@ import Header from '../Header/Header';
 import Dropdown from '../Dropdown/Dropdown';
 import Typewriter from 'typewriter-effect';
 import Particle from '../Particle';
+import { theme } from 'theme/theme';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,7 @@ const Home = () => {
       <HomeContainer>
         <HomeWrapper>
           <HomeLeft>
-            <h1>Oi, eu sou o Bernardo</h1>
+            <h1>Oi, eu sou o <strong style={{color: theme.accent}}>Bernardo</strong></h1>
             <DivLinha>
               <h5>Desenvolvedor</h5>
               <div style={{ paddingLeft: 10 }}>

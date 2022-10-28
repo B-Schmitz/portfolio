@@ -7,12 +7,12 @@ export const FooterSection = styled.footer`
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 350px;
+  height: 300px;
   position: relative;
 
   span {
     position: absolute;
-    bottom: 1rem;
+    bottom: 0;
     color: ${theme.white};
   }
   ul {
@@ -21,7 +21,12 @@ export const FooterSection = styled.footer`
     gap: 15%;
     position: absolute;
     bottom: 0;
-    right: 8rem;
+    right: 20rem;
+
+    @media screen and (max-width: 1000px) {
+      right: 8rem;
+     
+    }
 
     @media screen and (max-width: 550px) {
       right: 1rem;
@@ -37,7 +42,7 @@ export const FooterSection = styled.footer`
       color: ${theme.onSurface};
     }
     @media screen and (max-width: 550px) {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
     }
   }
   }

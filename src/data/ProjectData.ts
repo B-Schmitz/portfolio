@@ -1,12 +1,5 @@
 import pomodoro from '../assets/images/pomodoro-cover.png'
 import nlwesports from '../assets/images/nlw-esports-cover.png'
-import css from '../assets/images/css.png'
-import git from '../assets/images/git.png'
-import html from '../assets/images/html.png'
-import nextjs from '../assets/images/nextjs.png'
-import react from '../assets/images/react.png'
-import typescript from '../assets/images/typescript.png'
-import bootstrap from '../assets/images/bootstrap.png'
 import alurastudies from '../assets/images/alura-studies-cover.png'
 
 export interface IProject {
@@ -23,7 +16,6 @@ export interface IStack {
   name: string;
   img: string;
 }
-
 
 export const ProjectList: IProject[] = [
   {
@@ -54,31 +46,55 @@ export const ProjectList: IProject[] = [
 
 export const stackList: IStack[] = [
   {
-    img: react,
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     name: 'React/Native'
   },
   {
-    img: typescript,
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
     name: 'Typescript'
   },
   {
-    img: nextjs,
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
     name: 'Next JS'
   },
   {
-    img: html,
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
     name: 'HTML'
   },
   {
-    img: css,
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
     name: 'CSS'
   },
   {
-    img: git,
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    name: 'Javascript'
+  },
+  {
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
     name: 'Git'
   },
   {
-    img: bootstrap,
-    name: 'Bootstrap 5'
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+    name: 'Bootstrap'
+  },
+  {
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    name: 'Node JS'
+  },
+  {
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg",
+    name: 'Tailwind CSS '
+  },
+  {
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetbrains/jetbrains-original.svg",
+    name: 'Jetbrains'
+  },
+  {
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg",
+    name: 'Trello'
+  },
+  {
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+    name: 'VS Code'
   }
 ];
