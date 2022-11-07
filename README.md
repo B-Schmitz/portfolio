@@ -1,6 +1,6 @@
 ## Deploy
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2185b9f3-ea08-429f-a492-0a870c4c0038/deploy-status)](https://app.netlify.com/sites/bernardoschmitz/deploys) 
+[![Vercel Status](https://therealsujitk-vercel-badge.vercel.app/?app=vercel.com/bernardos/portfolio&style=for-the-badge&logo=false) 
 
 <h1 align="center">
     <img alt="Bernardo Schmitz" src="public/images/cover.png" />
