@@ -1,6 +1,6 @@
 ## Deploy
 
-[![Vercel Status](https://therealsujitk-vercel-badge.vercel.app/?app=vercel.com/bernardos/portfolio&style=for-the-badge&logo=false) 
+(https://therealsujitk-vercel-badge.vercel.app/?app=vercel.com/bernardos/portfolio&style=for-the-badge&logo=false) 
 
 <h1 align="center">
     <img alt="Bernardo Schmitz" src="public/images/cover.png" />
