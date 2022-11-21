@@ -1,6 +1,6 @@
-import pomodoro from '../assets/images/pomodoro-cover.png'
-import nlwesports from '../assets/images/nlw-esports-cover.png'
-import alurastudies from '../assets/images/alura-studies-cover.png'
+import pomodoro from 'assets/images/pomodoro-cover.png'
+import nlwesports from 'assets/images/nlw-esports-cover.png'
+import alurastudies from 'assets/images/alura-studies-cover.png'
 
 export interface IProject {
   img: string;

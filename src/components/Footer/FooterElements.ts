@@ -12,7 +12,7 @@ export const FooterSection = styled.footer`
 
   span {
     position: absolute;
-    bottom: 0;
+    bottom: 0.5rem;
     color: ${theme.white};
   }
   ul {

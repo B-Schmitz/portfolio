@@ -18,15 +18,15 @@ export const Card = styled.div`
 
 export const CardLeft = styled.div`
   background: ${theme.onSurface};
-  border-radius: 5px;
-  padding: 4px;
-  height: 280px;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  height: 300px;
   display: flex;
   
   img {
     object-fit: cover;
     width: 100%;
-    border-radius: 3px;
+    border-radius: 0.25rem;
   }
 `;
 

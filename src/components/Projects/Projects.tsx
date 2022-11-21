@@ -21,7 +21,7 @@ function Projects() {
 
 
       <div className='ProjectWrapper' id='projects'>
-        <div className='Container'>
+      <div className='Container'>
           <div className='SectionTitle'>Projetos</div>
           <ProjectCard />
         </div>

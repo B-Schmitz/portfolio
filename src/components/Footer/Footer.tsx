@@ -11,7 +11,7 @@ function Footer() {
 
   return (
     <FooterSection>
-      <div className='Container'>
+       <div className='Container'>
         <span>
           Coded with 💜 by{' '}
           <a href='https://github.com/B-Schmitz' target='_blank' rel='noopener noreferrer'>
@@ -20,7 +20,6 @@ function Footer() {
         </span>
 
         <ul>
-          
           <li className='item'>
             <a href='https://www.linkedin.com/in/bernardo-ssantos/' target='_blank' rel='noopener noreferrer'>
               <FaLinkedin />
