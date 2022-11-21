@@ -64,10 +64,8 @@ video {
 
 .Container {
   width: 100%;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 0 1rem;
+  margin: 0 auto;
 }
 
 .ProjectWrapper {

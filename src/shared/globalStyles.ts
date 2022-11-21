@@ -9,7 +9,7 @@ export const SectionTitle = styled.h2`
 font-size: 28px;
 color: #fafafa;
 font-weight: 700;
-margin-bottom: 2.5rem;
+margin-bottom: 2rem;
 `;
 
 export const BigCard = styled.div`

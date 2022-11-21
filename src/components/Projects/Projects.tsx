@@ -1,3 +1,4 @@
+import { SectionTitle } from 'shared/globalStyles';
 import ProjectCard from './ProjectCard/ProjectCard';
 function Projects() {
   
@@ -19,10 +20,9 @@ function Projects() {
         ></path>
       </svg>
 
-
       <div className='ProjectWrapper' id='projects'>
       <div className='Container'>
-          <div className='SectionTitle'>Projetos</div>
+          <SectionTitle>Projetos</SectionTitle>
           <ProjectCard />
         </div>
       </div>
