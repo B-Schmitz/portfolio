@@ -1,6 +1,7 @@
-import pomodoro from 'assets/images/pomodoro-cover.png'
-import nlwesports from 'assets/images/nlw-esports-cover.png'
-import alurastudies from 'assets/images/alura-studies-cover.png'
+import pomodoro from 'assets/images/pomodoro-cover.png';
+import nlwesports from 'assets/images/nlw-esports-cover.png';
+import alurastudies from 'assets/images/alura-studies-cover.png';
+import hdlinks from 'assets/images/hdlinks-cover.png';
 
 export interface IProject {
   img: string;
@@ -41,60 +42,68 @@ export const ProjectList: IProject[] = [
     tech_stack: 'React, Typescript',
     github_url: 'https://github.com/B-Schmitz/alura-studies',
     demo_url: 'https://alurastudiesapp.netlify.app/'
+  },
+  {
+    img: hdlinks,
+    title: 'HD Links',
+    description: 'Projeto privado, no estilo speed dial com autenticação pelo firebase e firestore para gravar os dados.',
+    tech_stack: 'React, Typescript, NextJS, Bootstrap',
+    github_url: '',
+    demo_url: ''
   }
 ];
 
 export const stackList: IStack[] = [
   {
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
     name: 'React/Native'
   },
   {
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
     name: 'Typescript'
   },
   {
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
     name: 'Next JS'
   },
   {
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
     name: 'HTML'
   },
   {
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
     name: 'CSS'
   },
   {
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
     name: 'Javascript'
   },
   {
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
     name: 'Git'
   },
   {
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg',
     name: 'Bootstrap'
   },
   {
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
     name: 'Node JS'
   },
   {
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg",
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg',
     name: 'Tailwind CSS '
   },
   {
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetbrains/jetbrains-original.svg",
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetbrains/jetbrains-original.svg',
     name: 'Jetbrains'
   },
   {
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg",
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg',
     name: 'Trello'
   },
   {
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
     name: 'VS Code'
   }
 ];

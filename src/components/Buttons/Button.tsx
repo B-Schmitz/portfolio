@@ -18,7 +18,7 @@ function Button({ background = theme.onBackground, color = theme.title, text, li
       className='btn'
       style={{ backgroundColor: hover ? theme.white : background, color: hover ? theme.onBackground : color }}
       href={link ? link : '#'}
-      target='_blank'
+      target={link ? '_blank' : ''}
       rel='noopener noreferrer'
     >
       {text}
