@@ -1,7 +1,3 @@
-## Deploy
-
-![NetlifyDeploy](https://therealsujitk-netlify-badge.netlify.app/?app=netlify.com/bernardos/portfolio&style=for-the-badge&logo=false) 
-
 <h1 align="center">
     <img alt="Bernardo Schmitz" src="public/images/cover.png" />
 </h1>
@@ -15,6 +11,7 @@
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [React](https://reactjs.org)
+- [Next JS](https://nextjs.org)
 - [Styled Components](https://styled-components.com/)
 - [Particles](https://github.com/matteobruni/tsparticles)
 - [TypeScript](https://www.typescriptlang.org/)
