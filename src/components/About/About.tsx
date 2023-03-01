@@ -1,6 +1,8 @@
-import { Image, Technologies, Tech, TechImg, TechName, ContactWrapper } from './AboutElements';
+import { Technologies, Tech, TechName, ContactWrapper, ImgBio } from './AboutElements';
 import { stackList } from 'data/ProjectData';
 import { AboutBio, BigCard, SectionTitle } from 'styles/globalStyles';
+import Image from 'next/image';
+import { theme } from 'theme/theme';
 
 function About() {
   return (
@@ -9,14 +11,16 @@ function About() {
         <SectionTitle>Sobre</SectionTitle>
         <BigCard>
           <AboutBio>
-            <Image src={'/images/astronauta.png'} alt='imagem-astronauta' />
+            <ImgBio>
+              <Image style={{ height: 120, backgroundColor: theme.surface, borderRadius: 100 }} width={125} height={125} src={'/images/astronauta.png'} alt='imagem-astronauta' />
+            </ImgBio>
             Hello world! Me chamo <strong>Bernardo Schmitz</strong>, sou formado em Ciência da computação pela UNESC e trabalho como programador front-end e mobile. Abaixo algumas
             das principais tecnologias em que trabalho.
           </AboutBio>
           <Technologies>
             {stackList.map((stack, index) => (
-              <Tech key={index} className='tech'>
-                <TechImg src={stack.img} alt={stack.name} />
+              <Tech key={index}>
+                <Image width={48} height={48} src={stack.img} alt={stack.name} />
                 <TechName>{stack.name}</TechName>
               </Tech>
             ))}

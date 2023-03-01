@@ -1,8 +1,3 @@
-import pomodoro from 'assets/images/pomodoro-cover.png';
-import nlwesports from 'assets/images/nlw-esports-cover.png';
-import alurastudies from 'assets/images/alura-studies-cover.png';
-import hdlinks from 'assets/images/hdlinks-cover.png';
-
 export interface IProject {
   img: string;
   title: string;
@@ -20,7 +15,7 @@ export interface IStack {
 
 export const ProjectList: IProject[] = [
   {
-    img: pomodoro,
+    img: '/images/pomodoro-cover.png',
     title: 'Pomodoro Web',
     description: 'Um dos primeiros projetos que fiz por meio do curso direto ao ponto (JavaScript - Pomodoro - Gestão de Tempo) da Treina Web',
     tech_stack: 'HTML, CSS, JS',
@@ -28,7 +23,7 @@ export const ProjectList: IProject[] = [
     demo_url: 'https://pomodoroweb.netlify.app/'
   },
   {
-    img: nlwesports,
+    img: '/images/nlw-esports-cover.png',
     title: 'Find your Duo',
     description: 'Projeto fullstack web e mobile, desenvolvido durante a NLW-eSports da Rocketseat.',
     tech_stack: 'React, React Native, Typescript, Tailwind CSS, Radix UI, Prisma, Node JS',
@@ -36,7 +31,7 @@ export const ProjectList: IProject[] = [
     demo_url: ''
   },
   {
-    img: alurastudies,
+    img: '/images/alura-studies-cover.png',
     title: 'Alura Studies',
     description: 'Projeto de Todo list com cronômetro para cada tarefa.',
     tech_stack: 'React, Typescript',
@@ -44,7 +39,7 @@ export const ProjectList: IProject[] = [
     demo_url: 'https://alurastudiesapp.netlify.app/'
   },
   {
-    img: hdlinks,
+    img: '/images/hdlinks-cover.png',
     title: 'HD Links',
     description: 'Projeto privado, no estilo speed dial com autenticação pelo firebase e firestore para gravar os dados.',
     tech_stack: 'React, Typescript, NextJS, Bootstrap',

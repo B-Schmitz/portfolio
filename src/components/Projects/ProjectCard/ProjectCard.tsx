@@ -11,7 +11,7 @@ function ProjectCard() {
       {ProjectList.map((list, index) => (
         <Card key={index}>
           <CardLeft>
-            <Image priority quality={100} width={295} height={295} style={{ objectFit: 'cover' }} src={list.img} alt={list.stack?.name || ''} />
+            <Image priority quality={100} width={400} height={295} style={{ objectFit: 'cover' }} src={list.img} alt={list.stack?.name || ''} />
           </CardLeft>
           <CardRight>
             <h4>{list.title}</h4>

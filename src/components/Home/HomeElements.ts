@@ -81,10 +81,7 @@ export const HomeRight = styled.div`
   display: flex;
 `;
 
-export const ImageBackground = styled.img`
-  height: 320px;
-  aspect-ratio: 1;
-  background-color: ${theme.background};
+export const ImageBackground = styled.div`
   opacity: 0.8;
   border-radius: 100%;
 `;

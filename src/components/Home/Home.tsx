@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { DivLinha } from 'styles/globalStyles';
 import { CgMouse } from 'react-icons/cg';
+import Image from 'next/image';
 
 import { HomeContainer, HomeWrapper, HomeLeft, HomeRight, ScrollDown, ScrollLink, Main, ImageBackground } from './HomeElements';
 import Header from '../Header/Header';
@@ -43,7 +44,15 @@ const Home = () => {
             <p>Essa é uma página dedicada a mostrar alguns projetos e estudos de forma organizada. Siga-me nas redes sociais!</p>
           </HomeLeft>
           <HomeRight>
-            <ImageBackground src={'/images/astronauta.png'} alt='imagem-astronauta' />
+            <ImageBackground>
+              <Image
+                style={{ aspectRatio: 1, backgroundColor: theme.background, borderRadius: '100%' }}
+                width={400}
+                height={400}
+                src={'/images/astronauta.png'}
+                alt='imagem-astronauta'
+              />
+            </ImageBackground>
           </HomeRight>
         </HomeWrapper>
         <ScrollDown to='projects'>

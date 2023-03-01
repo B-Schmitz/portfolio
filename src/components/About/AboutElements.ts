@@ -1,17 +1,7 @@
-import styled from "styled-components";
-import { theme } from "theme/theme";
+import styled from 'styled-components';
 
 export const ContactWrapper = styled.div`
   margin-top: 5rem;
-`;
-
-export const Image = styled.img`
-  max-width: 120px;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-  height: 120px;
-  background-color: ${theme.onSurface};
-  border-radius: 100%;
 `;
 
 export const Technologies = styled.div`
@@ -32,9 +22,12 @@ export const Tech = styled.div`
   margin-bottom: 1rem;
 `;
 
-export const TechImg = styled.img`
-  height: 48px;
-  width: auto
+export const ImgBio = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1rem;
+  height: 120;
 `;
 
 export const TechName = styled.div`
