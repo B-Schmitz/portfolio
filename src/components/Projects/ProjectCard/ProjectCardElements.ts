@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { theme } from "theme/theme";
+import styled from 'styled-components';
+import { theme } from 'theme/theme';
 
 export const Card = styled.div`
   display: grid;
@@ -22,7 +22,7 @@ export const CardLeft = styled.div`
   padding: 0.2rem;
   height: 300px;
   display: flex;
-  
+
   img {
     object-fit: cover;
     width: 100%;
@@ -66,12 +66,12 @@ export const Stack = styled.div`
     font-weight: 700;
     margin-right: 5px;
     font-size: 17px;
-    color: ${theme.title}
+    color: ${theme.title};
   }
 
   .tags {
     font-size: 15px;
     font-weight: 600;
-    color: ${theme.text}
+    color: ${theme.text};
   }
 `;

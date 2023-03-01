@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import Button from '../Buttons/Button';
 import { theme } from 'theme/theme';
-import { CloseIcon, NavMenu, NavBtn, NavLink} from './DropdownElements';
+import { CloseIcon, NavMenu, NavBtn, NavLink } from './DropdownElements';
 
 interface IDropdownProps {
-  isOpen: boolean,
+  isOpen: boolean;
   toggle?: () => void;
 }
 

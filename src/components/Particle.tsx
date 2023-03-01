@@ -1,12 +1,11 @@
-import { useCallback } from "react";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
-import { Engine, Container } from "tsparticles-engine";
-import { theme } from "theme/theme";
+import { useCallback } from 'react';
+import Particles from 'react-tsparticles';
+import { loadFull } from 'tsparticles';
+import { Engine, Container } from 'tsparticles-engine';
+import { theme } from 'theme/theme';
 
 const Particle = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
-
     await loadFull(engine);
   }, []);
 
@@ -14,10 +13,10 @@ const Particle = () => {
 
   return (
     <Particles
-      id="tsparticles"
+      id='tsparticles'
       init={particlesInit}
       loaded={particlesLoaded}
-      style={{flex: 1}}
+      style={{ flex: 1 }}
       options={{
         backgroundMode: {
           zIndex: -1
@@ -27,9 +26,9 @@ const Particle = () => {
           events: {
             onHover: {
               enable: true,
-              mode: 'bubble',
+              mode: 'bubble'
             },
-            resize: true,
+            resize: true
           },
           modes: {
             bubble: {
@@ -38,46 +37,46 @@ const Particle = () => {
               duration: 0.5,
               opacity: 1
             }
-          },
+          }
         },
         particles: {
           color: {
             value: theme.text
           },
           collisions: {
-            enable: true,
+            enable: true
           },
           move: {
-            direction: "none",
+            direction: 'none',
             enable: true,
             outModes: {
-              default: "bounce",
+              default: 'bounce'
             },
             random: false,
             speed: 0.3,
-            straight: false,
+            straight: false
           },
           number: {
             density: {
               enable: true,
-              area: 5000,
+              area: 5000
             },
-            value: 80,
+            value: 80
           },
           opacity: {
-            value: 0.3,
+            value: 0.3
           },
           shape: {
-            type: "star",
+            type: 'star'
           },
           size: {
-            value: { min: 0.5, max: 1 },
-          },
+            value: { min: 0.5, max: 1 }
+          }
         },
-        detectRetina: true,
+        detectRetina: true
       }}
     />
   );
 };
 
-export default Particle
+export default Particle;

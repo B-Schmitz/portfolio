@@ -1,9 +1,8 @@
 import styled from 'styled-components';
-import wave from 'assets/svgs/wave.svg';
 import { theme } from 'theme/theme';
 
 export const FooterSection = styled.footer`
-  background-image: url(${wave});
+background-image: url("/images/wave.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;

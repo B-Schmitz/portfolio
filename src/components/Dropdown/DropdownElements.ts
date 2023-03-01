@@ -1,7 +1,7 @@
-import { FaTimes } from "react-icons/fa";
+import { FaTimes } from 'react-icons/fa';
 import { Link as ScrollLink } from 'react-scroll';
-import styled from "styled-components";
-import { theme } from "theme/theme";
+import styled from 'styled-components';
+import { theme } from 'theme/theme';
 
 export const CloseIcon = styled(FaTimes)`
   font-size: 2rem;
