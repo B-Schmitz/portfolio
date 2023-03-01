@@ -1,7 +1,7 @@
 {
   "builds": [
     {
-      "src": "/src",
+      "src": "/",
       "use": "@vercel/static-build",
       "config": {
         "outputDirectory": "build"
