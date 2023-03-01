@@ -13,6 +13,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "baseUrl": "src",
+    "outDir": "build",
     "jsx": "preserve",
     "incremental": true,
     "paths": {
