@@ -3,9 +3,9 @@ import Projects from 'components/Projects/Projects';
 import About from 'components/About/About';
 import Footer from 'components/Footer/Footer';
 
-function Home() {
+export default function Home() {
   return (
-    <>           
+    <>
       <HomePage />
       <Projects />
       <About />
@@ -13,5 +13,3 @@ function Home() {
     </>
   );
 }
-
-export default Home;

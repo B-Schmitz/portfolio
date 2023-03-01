@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import { DivLinha } from 'shared/globalStyles';
+import { DivLinha } from 'styles/globalStyles';
 import { CgMouse } from 'react-icons/cg';
-import astronauta from 'assets/images/astronauta.png';
 
 import { HomeContainer, HomeWrapper, HomeLeft, HomeRight, ScrollDown, ScrollLink, Main, ImageBackground } from './HomeElements';
 import Header from '../Header/Header';
@@ -24,7 +23,9 @@ const Home = () => {
       <HomeContainer>
         <HomeWrapper>
           <HomeLeft>
-            <h1>Oi, eu sou o <strong style={{color: theme.accent}}>Bernardo</strong></h1>
+            <h1>
+              Oi, eu sou o <strong style={{ color: theme.accent }}>Bernardo</strong>
+            </h1>
             <DivLinha>
               <h5>Desenvolvedor</h5>
               <div style={{ paddingLeft: 10 }}>
@@ -42,7 +43,7 @@ const Home = () => {
             <p>Essa é uma página dedicada a mostrar alguns projetos e estudos de forma organizada. Siga-me nas redes sociais!</p>
           </HomeLeft>
           <HomeRight>
-            <ImageBackground src={astronauta} alt='imagem-astronauta' />
+            <ImageBackground src={'/images/astronauta.png'} alt='imagem-astronauta' />
           </HomeRight>
         </HomeWrapper>
         <ScrollDown to='projects'>
@@ -53,7 +54,6 @@ const Home = () => {
         </ScrollDown>
       </HomeContainer>
       <Particle />
-    
     </Main>
   );
 };

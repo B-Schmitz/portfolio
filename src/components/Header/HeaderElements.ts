@@ -1,7 +1,7 @@
-import { FaBars } from "react-icons/fa";
-import { Link as LinkRouter } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
-import styled from "styled-components";
+import { FaBars } from 'react-icons/fa';
+import Link from 'next/link';
+import { Link as ScrollLink } from 'react-scroll';
+import styled from 'styled-components';
 import { theme } from '../../theme/theme';
 
 export const Nav = styled.nav`
@@ -28,13 +28,12 @@ export const NavLink = styled(ScrollLink)`
 `;
 
 export const Logo2 = styled.h1`
- color: ${theme.title};
- font-size: 3rem;
- font-family: 'Marck Script', cursive;
-
+  color: ${theme.title};
+  font-size: 3rem;
+  font-family: 'Marck Script', cursive;
 `;
 
-export const Logo = styled(LinkRouter)`
+export const Logo = styled(Link)`
   img {
     width: 47px;
     height: 47px;

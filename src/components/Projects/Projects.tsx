@@ -1,11 +1,10 @@
-import { SectionTitle } from 'shared/globalStyles';
+import { SectionTitle } from 'styles/globalStyles';
 import ProjectCard from './ProjectCard/ProjectCard';
 function Projects() {
-  
   return (
     <>
       <svg height='100%' width='100%' id='svg' viewBox='0 60 1440 300' xmlns='http://www.w3.org/2000/svg'>
-      <defs>
+        <defs>
           <linearGradient id='sw-gradient-0' x1='0' x2='0' y1='1' y2='0'>
             <stop stop-color='rgba(49, 29, 68, 1)' offset='40%'></stop>
             <stop stop-color='rgba(48, 28, 65, 1))' offset='100%'></stop>
@@ -21,7 +20,7 @@ function Projects() {
       </svg>
 
       <div className='ProjectWrapper' id='projects'>
-      <div className='Container'>
+        <div className='Container'>
           <SectionTitle>Projetos</SectionTitle>
           <ProjectCard />
         </div>
