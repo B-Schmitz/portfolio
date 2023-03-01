@@ -13,7 +13,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "baseUrl": "src",
-    "outDir": "build",
+    "outDir": "/dist",
     "jsx": "preserve",
     "incremental": true,
     "paths": {
