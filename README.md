@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Bernardo Schmitz" src="public/images/cover.png" />
+    <img alt="Bernardo Schmitz" src="public/images/cover.webp" />
 </h1>
 
 <p align="center">

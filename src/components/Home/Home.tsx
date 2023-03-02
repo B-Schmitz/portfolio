@@ -52,7 +52,7 @@ const Home = () => {
                 style={{ aspectRatio: 1, backgroundColor: theme.background, borderRadius: '100%' }}
                 width={400}
                 height={400}
-                src={'/images/astronauta.png'}
+                src={'/images/astronauta.webp'}
                 alt='imagem-astronauta'
               />
             </ImageBackground>
