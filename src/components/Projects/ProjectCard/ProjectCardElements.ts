@@ -22,12 +22,6 @@ export const CardLeft = styled.div`
   padding: 0.2rem;
   height: 300px;
   display: flex;
-
-  img {
-    object-fit: cover;
-    width: 100%;
-    border-radius: 0.25rem;
-  }
 `;
 
 export const CardRight = styled.div`

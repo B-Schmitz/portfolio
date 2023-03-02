@@ -4,6 +4,7 @@ import { ProjectList } from 'data/ProjectData';
 import { Card, CardLeft, CardRight, Stack } from './ProjectCardElements';
 import { theme } from 'theme/theme';
 import Image from 'next/image';
+import Carousel from 'nuka-carousel';
 
 function ProjectCard() {
   return (
@@ -11,7 +12,11 @@ function ProjectCard() {
       {ProjectList.map((list, index) => (
         <Card key={index}>
           <CardLeft>
-            <Image priority quality={100} width={400} height={295} style={{ objectFit: 'cover' }} src={list.img} alt={list.stack?.name || ''} />
+            <Carousel defaultControlsConfig={{ nextButtonText: '>', prevButtonText: '<' }}>
+              {list.img.map(e => (
+                <Image key={e} priority quality={100} width={1920} height={295} style={{ aspectRatio: 1, borderRadius: '8px' }} src={e} alt={list.stack?.name || ''} />
+              ))}
+            </Carousel>
           </CardLeft>
           <CardRight>
             <h4>{list.title}</h4>

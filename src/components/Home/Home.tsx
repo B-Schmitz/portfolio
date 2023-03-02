@@ -41,7 +41,10 @@ const Home = () => {
                 />
               </div>
             </DivLinha>
-            <p>Essa é uma página dedicada a mostrar alguns projetos e estudos de forma organizada. Siga-me nas redes sociais!</p>
+            <p>
+              Bem vindo, neste portfólio você irá encontrar alguns projetos públicos e privados desenvolvidos por mim. Entre em contato comigo por meio de alguma rede social, ou
+              discord!
+            </p>
           </HomeLeft>
           <HomeRight>
             <ImageBackground>
