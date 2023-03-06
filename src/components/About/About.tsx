@@ -28,7 +28,7 @@ function About() {
         </BigCard>
       </div>
     </ContactWrapper>
-  )
+  );
 }
 
 export default About;

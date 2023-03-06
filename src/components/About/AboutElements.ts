@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
-export const ContactWrapper = styled.div`
-  margin-top: 5rem;
-`;
+export const ContactWrapper = styled.div``;
 
 export const Technologies = styled.div`
   display: flex;

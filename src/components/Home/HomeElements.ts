@@ -4,7 +4,7 @@ import { theme } from '../../theme/theme';
 
 export const HomeContainer = styled.div`
   padding-bottom: 2rem;
-  padding-top: 4rem;
+  padding-top: 2rem;
   padding-right: 1rem;
   padding-left: 1rem;
   margin-right: auto;
@@ -51,8 +51,7 @@ export const HomeLeft = styled.div`
   h1 {
     font-size: 2.8rem;
     color: ${theme.title};
-    opacity: 0.98;
-    font-weight: 400;
+    font-weight: 600;
   }
 
   h5 {
@@ -82,7 +81,7 @@ export const HomeRight = styled.div`
 `;
 
 export const ImageBackground = styled.div`
-  opacity: 0.8;
+  opacity: 0.75;
   border-radius: 100%;
 `;
 
