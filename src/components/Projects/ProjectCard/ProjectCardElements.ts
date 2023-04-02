@@ -19,12 +19,12 @@ export const Card = styled.div`
 export const CardLeft = styled.div`
   border-radius: 0.5rem;
   display: flex;
+  width: auto;
+  max-width: 600px;
   border: 1px solid ${theme.surface};
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 
   img {
-    height: 280px;
-    object-fit: cover;
     border-radius: 0.5rem;
   }
 `;

@@ -1,4 +1,4 @@
-import { SectionTitle } from 'styles/globalStyles';
+import { SectionTitle } from 'styles/globalStyled';
 import ProjectCard from './ProjectCard/ProjectCard';
 import { ContainerProjects } from './ProjectsElements';
 function Projects() {

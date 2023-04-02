@@ -1,5 +1,5 @@
 import Button from 'components/Buttons/Button';
-import { DivLinha } from 'styles/globalStyles';
+import { DivLinha } from 'styles/globalStyled';
 import { ProjectList } from 'data/ProjectData';
 import { Card, CardLeft, CardRight, Stack } from './ProjectCardElements';
 import { theme } from 'theme/theme';
@@ -14,7 +14,7 @@ function ProjectCard() {
           <CardLeft>
             <Carousel defaultControlsConfig={{ nextButtonText: '>', prevButtonText: '<' }}>
               {list.img.map(e => (
-                <Image key={e} priority quality={100} width={500} height={300} src={e} alt={list.stack?.name || ''} />
+                <Image key={e} priority quality={100} width={600} height={350} src={e} alt={list.stack?.name || ''} />
               ))}
             </Carousel>
           </CardLeft>

@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import { DivLinha } from 'styles/globalStyles';
+import { DivLinha } from 'styles/globalStyled';
 import { CgMouse } from 'react-icons/cg';
 import Image from 'next/image';
-
 import { HomeContainer, HomeWrapper, HomeLeft, HomeRight, ScrollDown, ScrollLink, Main, ImageBackground } from './HomeElements';
 import Header from '../Header/Header';
 import Dropdown from '../Dropdown/Dropdown';
@@ -49,7 +48,7 @@ const Home = () => {
           <HomeRight>
             <ImageBackground>
               <Image
-                style={{ aspectRatio: 1, backgroundColor: theme.background, borderRadius: '100%' }}
+                style={{ objectFit: 'cover', aspectRatio: 1, backgroundColor: theme.background, borderRadius: '100%' }}
                 width={400}
                 height={400}
                 src={'/images/astronauta.webp'}
