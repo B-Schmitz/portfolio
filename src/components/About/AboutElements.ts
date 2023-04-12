@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ContactWrapper = styled.div``;
+export const ContactWrapper = styled.section``;
 
 export const Technologies = styled.div`
   display: flex;

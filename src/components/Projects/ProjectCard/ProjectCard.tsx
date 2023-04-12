@@ -14,7 +14,7 @@ function ProjectCard() {
           <CardLeft>
             <Carousel defaultControlsConfig={{ nextButtonText: '>', prevButtonText: '<' }}>
               {list.img.map(e => (
-                <Image key={e} priority quality={100} width={600} height={350} src={e} alt={list.stack?.name || ''} />
+                <Image key={e} priority quality={100} width={1920} height={1080} src={e} alt={list.stack?.name || ''} />
               ))}
             </Carousel>
           </CardLeft>
