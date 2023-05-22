@@ -13,9 +13,9 @@ export default function Document() {
 
         <title>Bernardo Schmitz</title>
         <meta name="description" content="Conheça mais sobre mim e alguns de meus projetos exibidos nessa página. " />
-        <meta itemprop="name" content="Bernardo Schmitz" />
-        <meta itemprop="description" content="Conheça mais sobre mim e alguns de meus projetos exibidos nessa página. " />
-        <meta itemprop="image" content="https://raw.githubusercontent.com/B-Schmitz/portfolio/main/public/images/cover.webp" />
+        <meta itemProp="name" content="Bernardo Schmitz" />
+        <meta itemProp="description" content="Conheça mais sobre mim e alguns de meus projetos exibidos nessa página. " />
+        <meta itemProp="image" content="https://raw.githubusercontent.com/B-Schmitz/portfolio/main/public/images/cover.webp" />
 
         <meta property="og:url" content="https://bernardoschmitz.vercel.app" />
         <meta property="og:type" content="website" />
