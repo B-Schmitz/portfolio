@@ -3,8 +3,8 @@ export interface IProject {
   title: string;
   description: string;
   tech_stack: string;
-  github_url: string;
-  demo_url: string;
+  github_url?: string;
+  demo_url?: string;
   stack?: IStack;
 }
 
@@ -23,36 +23,22 @@ export const ProjectList: IProject[] = [
     demo_url: 'https://pomodoroweb.netlify.app/'
   },
   {
-    img: ['/images/nlw-esports-cover.webp'],
-    title: 'Find your Duo',
-    description: 'Projeto fullstack web e mobile, desenvolvido durante a NLW-eSports da Rocketseat.',
-    tech_stack: 'React, React Native, Typescript, Tailwind CSS, Radix UI, Prisma, Node JS',
-    github_url: 'https://github.com/B-Schmitz/nlw-esports',
-    demo_url: ''
-  },
-  {
-    img: ['/images/alura-studies-cover.webp'],
-    title: 'Alura Studies',
-    description: 'Projeto de Todo list com cronômetro para cada tarefa.',
-    tech_stack: 'React, Typescript',
-    github_url: 'https://github.com/B-Schmitz/alura-studies',
-    demo_url: 'https://alurastudiesapp.netlify.app/'
+    img: ['/images/pcp-componentes.webp', "/images/pcp-editar-estruturas.webp", "/images/pcp-comparar.webp"],
+    title: 'PCP',
+    description: 'Software web para cadastrar componentes e montar estruturas de um projeto eletrônico.',
+    tech_stack: 'React, Typescript, NextJS, Bootstrap, Prime React, MongoDB',
   },
   {
     img: ['/images/hdlinks-cover.webp', '/images/hdlinks-dashboard-cover.webp'],
     title: 'HD Links',
-    description: 'Projeto privado, no estilo speed dial com autenticação pelo firebase e firestore para gravar os dados.',
-    tech_stack: 'React, Typescript, NextJS, Bootstrap',
-    github_url: '',
-    demo_url: ''
+    description: 'Aplicação speed dial com autenticação pelo firebase e uso do firestore para gravar os dados.',
+    tech_stack: 'React, Typescript, NextJS, Bootstrap, Firebase',
   },
   {
     img: ['/images/traefik-config-cover.webp', '/images/traefik-config-novo-cover.webp', '/images/traefik-config-save-cover.webp'],
     title: 'Traefik Config',
-    description: 'Projeto privado, uma interface para edição do arquivo de configuração do trafiek .yml',
+    description: 'Uma interface para edição do arquivo de configuração do Trafiek .yml.',
     tech_stack: 'React, Typescript, NextJS, Bootstrap, yaml, Bcrypt',
-    github_url: '',
-    demo_url: ''
   }
 ];
 
@@ -92,8 +78,13 @@ export const stackList: IStack[] = [
   {
     img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
     name: 'Node JS'
-  },
-  {
+  }, {
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
+    name: 'MongoDB'
+}, {
+  img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
+      name: 'Firebase'
+}, {
     img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg',
     name: 'Tailwind CSS '
   },

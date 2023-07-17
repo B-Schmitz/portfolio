@@ -9,9 +9,7 @@ export default function Document() {
         <meta httpEquiv='cache-control' content='no-cache' />
         <meta httpEquiv='content-type' content='text/html; charset=UTF-8' />
         <meta name='copyright' content='© 2023 Bernardo Schmitz' />
-        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
 
-        <title>Bernardo Schmitz</title>
         <meta name="description" content="Conheça mais sobre mim e alguns de meus projetos exibidos nessa página. " />
         <meta itemProp="name" content="Bernardo Schmitz" />
         <meta itemProp="description" content="Conheça mais sobre mim e alguns de meus projetos exibidos nessa página. " />

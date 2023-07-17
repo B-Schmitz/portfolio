@@ -11,11 +11,11 @@ const Header = ({ toggle }: IHeaderProps) => {
       <Nav>
         <Logo2>B</Logo2>
         <NavMenu>
-          <NavLink className='menu-item' to='projects' smooth>
-            Projetos
-          </NavLink>
           <NavLink className='menu-item' to='about' smooth>
             Sobre
+          </NavLink>
+          <NavLink className='menu-item' to='projects' smooth>
+            Projetos
           </NavLink>
         </NavMenu>
         <NavBtn>

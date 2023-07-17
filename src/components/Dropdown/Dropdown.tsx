@@ -30,11 +30,11 @@ function Dropdown({ isOpen, toggle }: IDropdownProps) {
     <SiderBar isOpen={isOpen} onClick={toggle}>
       <CloseIcon onClickCapture={toggle} onClick={toggle} />
       <NavMenu>
-        <NavLink onClick={toggle} className='menu-item' to='projects' smooth>
-          Projetos
-        </NavLink>
         <NavLink onClick={toggle} className='menu-item' to='about' smooth>
           Sobre
+        </NavLink>
+        <NavLink onClick={toggle} className='menu-item' to='projects' smooth>
+          Projetos
         </NavLink>
       </NavMenu>
       <NavBtn onClick={toggle}>
