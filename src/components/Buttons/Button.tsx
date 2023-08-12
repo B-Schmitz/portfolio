@@ -9,14 +9,22 @@ interface IButtonProps {
   link?: string;
 }
 
-function Button({ background = theme.onBackground, color = theme.title, text, link }: IButtonProps) {
+function Button({
+  background = theme.onBackground,
+  color = theme.title,
+  text,
+  link
+}: IButtonProps) {
   const [hover, setHover] = useState(false);
   return (
     <a
       onMouseLeave={() => setHover(false)}
       onMouseEnter={() => setHover(true)}
       className={css.btn}
-      style={{ backgroundColor: hover ? theme.white : background, color: hover ? theme.onBackground : color }}
+      style={{
+        backgroundColor: hover ? theme.white : background,
+        color: hover ? theme.onBackground : color
+      }}
       href={link ? link : '#'}
       target={link ? '_blank' : ''}
       rel='noopener noreferrer'

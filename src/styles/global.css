@@ -118,3 +118,11 @@ body::-webkit-scrollbar-thumb {
     max-width: 1000px;
   }
 }
+
+// OVERRIDE PRIME REACT
+.p-galleria .p-galleria-indicators .p-galleria-indicator.p-highlight {
+}
+
+.p-galleria-indicator.p-highlight button {
+  background: #8a85ff !important;
+}
