@@ -12,10 +12,16 @@ function About() {
         <BigCard>
           <AboutBio>
             <ImgBio>
-              <Image style={{ height: 120, backgroundColor: theme.surface, borderRadius: 100 }} width={125} height={125} src={'/images/astronauta.webp'} alt='imagem-astronauta' />
+              <Image
+                style={{ height: 120, backgroundColor: theme.surface, borderRadius: 100 }}
+                width={125}
+                height={125}
+                src={'/images/astronauta.webp'}
+                alt='imagem-astronauta'
+              />
             </ImgBio>
-            Hello world! Me chamo <strong>Bernardo Schmitz</strong>, sou formado em Ciência da computação pela UNESC e trabalho como programador front-end e mobile. Abaixo algumas
-            das principais tecnologias em que trabalho.
+            Hello world! Me chamo <strong>Bernardo Schmitz</strong>, sou formado em Ciência da computação pela UNESC e
+            trabalho como programador front-end e mobile. Abaixo algumas das principais tecnologias em que trabalho.
           </AboutBio>
           <Technologies>
             {stackList.map((stack, index) => (

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { theme } from 'theme/theme';
 
 export const ContactWrapper = styled.section``;
 
@@ -30,4 +31,5 @@ export const ImgBio = styled.div`
 
 export const TechName = styled.div`
   font-size: 14px;
+  color: ${theme.black};
 `;
