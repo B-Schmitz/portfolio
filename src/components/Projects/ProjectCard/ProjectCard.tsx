@@ -1,6 +1,6 @@
 import Button from 'components/Buttons/Button';
 import { DivLinha } from 'styles/globalStyled';
-import { ProjectList } from 'data/ProjectData';
+import { ProjectList } from 'utils';
 import { Card, CardLeft, CardRight, Stack } from './ProjectCardElements';
 import { theme } from 'theme/theme';
 import { Image } from 'primereact/image';
