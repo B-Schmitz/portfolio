@@ -37,6 +37,9 @@ export const CardRight = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: rgba(15, 6, 23, 0.4);
+  padding: 16px;
+  border-radius: 8px;
 
   h4 {
     font-size: 1.5rem;

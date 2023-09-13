@@ -1,38 +1,30 @@
 import { Html, Head, Main, NextScript } from 'next/document';
+import { theme } from 'theme/theme';
+import { TITLE, DESCRIPTION, COVER_IMG, URL, AUTHOR, COPYRIGHT, KEYWORDS } from 'utils';
 
-/**
- * The Document component represents the HTML structure for a web page.
- * It includes meta tags for SEO and social media sharing.
- */
 export default function Document() {
   return (
     <Html lang='pt-BR'>
       <Head>
-        {/* SEO meta tags */}
-        <meta name='author' content='Bernardo Schmitz dos Santos' />
-        <meta name='keywords' content='portfólio, web, desenvolvimento, next js, react, typescript, frontend' />
-        <meta httpEquiv='cache-control' content='no-cache' />
+        <meta content={DESCRIPTION} property='description' />
+        <meta content={TITLE} property='og:title' />
+        <meta content={DESCRIPTION} property='og:description' />
+        <meta content={COVER_IMG} property='og:image' />
+        <meta content={TITLE} property='twitter:title' />
+        <meta content={DESCRIPTION} property='twitter:description' />
+        <meta content={COVER_IMG} property='twitter:image' />
+        <meta content='summary_large_image' property='twitter:card' />
+        <meta content='website' property='og:type' />
+        <meta content={URL} property='og:url' />
+        <meta property='theme-color' content={theme.onBackground} />
+
+        <meta name='author' content={AUTHOR} />
+        <meta name='keywords' content={KEYWORDS.join(',')} />
         <meta httpEquiv='content-type' content='text/html; charset=UTF-8' />
-        <meta name='copyright' content='© 2023 Bernardo Schmitz' />
+        <meta name='copyright' content={COPYRIGHT} />
 
-        {/* Structured data meta tags */}
-        <meta name='description' content='Conheça mais sobre mim e alguns de meus projetos exibidos nessa página. ' />
-        <meta itemProp='name' content='Bernardo Schmitz' />
-        <meta itemProp='description' content='Conheça mais sobre mim e alguns de meus projetos exibidos nessa página. ' />
-        <meta itemProp='image' content='https://raw.githubusercontent.com/B-Schmitz/portfolio/main/public/images/cover.webp' />
-
-        {/* Open Graph meta tags */}
-        <meta property='og:url' content='https://bernardoschmitz.vercel.app' />
-        <meta property='og:type' content='website' />
-        <meta property='og:title' content='Bernardo Schmitz' />
-        <meta property='og:description' content='Conheça mais sobre mim e alguns de meus projetos exibidos nessa página. ' />
-        <meta property='og:image' content='https://raw.githubusercontent.com/B-Schmitz/portfolio/main/public/images/cover.webp' />
-
-        {/* Twitter meta tags */}
-        <meta name='twitter:card' content='summary_large_image' />
-        <meta name='twitter:title' content='Bernardo Schmitz' />
-        <meta name='twitter:description' content='Conheça mais sobre mim e alguns de meus projetos exibidos nessa página. ' />
-        <meta name='twitter:image' content='https://raw.githubusercontent.com/B-Schmitz/portfolio/main/public/images/cover.webp' />
+        <link rel='icon' type='image/x-icon' href='/favicon.ico'></link>
+        <link rel='shortcut icon' href='/favicon.ico'></link>
       </Head>
       <body>
         <Main />
