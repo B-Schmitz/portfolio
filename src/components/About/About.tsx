@@ -1,5 +1,5 @@
 import { Technologies, Tech, TechName, ContactWrapper, ImgBio } from './AboutElements';
-import { stackList } from 'data/ProjectData';
+import { stackList } from 'utils';
 import { AboutBio, BigCard, SectionTitle } from 'styles/globalStyled';
 import Image from 'next/image';
 import { theme } from 'theme/theme';

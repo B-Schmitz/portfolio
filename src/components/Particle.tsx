@@ -9,13 +9,10 @@ const Particle = () => {
     await loadFull(engine);
   }, []);
 
-  const particlesLoaded = useCallback(async (container: Container | undefined) => {}, []);
-
   return (
     <Particles
       id='tsparticles'
       init={particlesInit}
-      loaded={particlesLoaded}
       style={{ flex: 1 }}
       options={{
         backgroundMode: {
@@ -73,7 +70,8 @@ const Particle = () => {
             value: { min: 0.5, max: 1 }
           }
         },
-        detectRetina: true
+        detectRetina: true,
+        smooth: true
       }}
     />
   );
