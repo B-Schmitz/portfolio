@@ -51,7 +51,7 @@ function ProjectCard() {
               {list.github_url ? (
                 <Button text='Github' link={list.github_url}></Button>
               ) : (
-                <Button text='PRIVADO' background={theme.private}></Button>
+                <Button text='PRIVADO'></Button>
               )}
               {list.demo_url && <Button text='Demo' link={list.demo_url}></Button>}
             </DivLinha>

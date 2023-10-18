@@ -39,7 +39,6 @@ function Dropdown({ isOpen, toggle }: IDropdownProps) {
       </NavMenu>
       <NavBtn onClick={toggle}>
         <Button
-          background={theme.surface}
           text='Currículo'
           link='https://drive.google.com/file/d/1hykLXSWL3SRtCLIEnup0ZEGhyYwY7BZO/view?usp=sharing'
         />
