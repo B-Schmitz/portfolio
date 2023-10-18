@@ -13,6 +13,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [React](https://reactjs.org)
 - [Next JS](https://nextjs.org)
 - [Styled Components](https://styled-components.com/)
+- [Prime React](https://primereact.org/)
 - [Particles](https://github.com/matteobruni/tsparticles)
 - [TypeScript](https://www.typescriptlang.org/)
 

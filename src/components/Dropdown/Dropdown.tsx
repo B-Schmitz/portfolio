@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Button from '../Buttons/Button';
+import Button from '../Button/Button';
 import { theme } from 'theme/theme';
 import { CloseIcon, NavMenu, NavBtn, NavLink } from './DropdownElements';
 
@@ -38,7 +38,11 @@ function Dropdown({ isOpen, toggle }: IDropdownProps) {
         </NavLink>
       </NavMenu>
       <NavBtn onClick={toggle}>
-        <Button background={theme.surface} text='Currículo' link='https://drive.google.com/file/d/1hykLXSWL3SRtCLIEnup0ZEGhyYwY7BZO/view?usp=sharing' />
+        <Button
+          background={theme.surface}
+          text='Currículo'
+          link='https://drive.google.com/file/d/1hykLXSWL3SRtCLIEnup0ZEGhyYwY7BZO/view?usp=sharing'
+        />
       </NavBtn>
     </SiderBar>
   );

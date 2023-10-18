@@ -6,7 +6,8 @@ import { Analytics } from '@vercel/analytics/react';
 import { PrimeReactProvider } from 'primereact/api';
 import 'primereact/resources/primereact.min.css';
 import 'primereact/resources/themes/bootstrap4-dark-purple/theme.css';
-import '../styles/global.css';
+import 'primeicons/primeicons.css';
+import '../styles/global.scss';
 export default function App({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>

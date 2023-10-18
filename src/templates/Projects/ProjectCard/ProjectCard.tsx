@@ -1,4 +1,4 @@
-import Button from 'components/Buttons/Button';
+import Button from 'components/Button/Button';
 import { DivLinha } from 'styles/globalStyled';
 import { ProjectList } from 'utils';
 import { Card, CardLeft, CardRight, Stack } from './ProjectCardElements';
@@ -22,7 +22,7 @@ function ProjectCard() {
   ];
 
   const itemTemplate = (item: any) => {
-    return <Image preview src={item} alt={item.alt} width={'1440px'} height={'800px'} />;
+    return <Image src={item} alt={item.alt} width={'1440px'} height={'800px'} />;
   };
 
   return (
@@ -31,6 +31,8 @@ function ProjectCard() {
         <Card key={index}>
           <CardLeft>
             <Galleria
+              showItemNavigators
+              showItemNavigatorsOnHover
               responsiveOptions={responsiveOptions}
               showIndicators
               value={list.img}

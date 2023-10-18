@@ -1,4 +1,4 @@
-import Button from '../Buttons/Button';
+import Button from '../Button/Button';
 import { Nav, Logo2, NavLink, Bars, NavMenu, NavBtn } from './HeaderElements';
 
 interface IHeaderProps {
@@ -19,7 +19,10 @@ const Header = ({ toggle }: IHeaderProps) => {
           </NavLink>
         </NavMenu>
         <NavBtn>
-          <Button text='Currículo' link='https://drive.google.com/file/d/1hykLXSWL3SRtCLIEnup0ZEGhyYwY7BZO/view?usp=sharing' />
+          <Button
+            text='Currículo'
+            link='https://drive.google.com/file/d/1hykLXSWL3SRtCLIEnup0ZEGhyYwY7BZO/view?usp=sharing'
+          />
         </NavBtn>
         <Bars onClick={toggle} />
       </Nav>
