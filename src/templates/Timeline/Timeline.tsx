@@ -69,7 +69,7 @@ export default function Timeline() {
   };
 
   return (
-    <ContainerTimeline id='timeline'>
+    <ContainerTimeline id='experience'>
       <div className='Container'>
         <SectionTitle>Experiência</SectionTitle>
         <TimelinePrime value={events}  align='alternate' className='' content={customizedContent} />

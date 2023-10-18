@@ -69,9 +69,9 @@ const Home = () => {
             </ImageBackground>
           </HomeRight>
         </HomeWrapper>
-        <ScrollDown to='projects'>
+        <ScrollDown to='about'>
           <ScrollLink>
-            Scroola ai
+            Scrolla ai
             <CgMouse />
           </ScrollLink>
         </ScrollDown>
