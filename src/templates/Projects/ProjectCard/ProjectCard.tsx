@@ -1,4 +1,4 @@
-import Button from 'components/Buttons/Button';
+import Button from 'components/Button/Button';
 import { DivLinha } from 'styles/globalStyled';
 import { ProjectList } from 'utils';
 import { Card, CardLeft, CardRight, Stack } from './ProjectCardElements';
@@ -22,7 +22,7 @@ function ProjectCard() {
   ];
 
   const itemTemplate = (item: any) => {
-    return <Image preview src={item} alt={item.alt} width={'1440px'} height={'800px'} />;
+    return <Image src={item} alt={item.alt} width={'1440px'} height={'800px'} />;
   };
 
   return (
@@ -31,6 +31,8 @@ function ProjectCard() {
         <Card key={index}>
           <CardLeft>
             <Galleria
+              showItemNavigators
+              showItemNavigatorsOnHover
               responsiveOptions={responsiveOptions}
               showIndicators
               value={list.img}
@@ -49,7 +51,7 @@ function ProjectCard() {
               {list.github_url ? (
                 <Button text='Github' link={list.github_url}></Button>
               ) : (
-                <Button text='PRIVADO' background={theme.private}></Button>
+                <Button text='PRIVADO'></Button>
               )}
               {list.demo_url && <Button text='Demo' link={list.demo_url}></Button>}
             </DivLinha>

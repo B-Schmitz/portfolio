@@ -78,6 +78,14 @@ export const HomeRight = styled.div`
   flex: 1;
   justify-content: center;
   display: flex;
+
+  img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    objectfit: cover;
+    border-radius: 100%;
+  }
 `;
 
 export const ImageBackground = styled.div`

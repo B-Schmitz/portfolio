@@ -13,7 +13,7 @@ function About() {
           <AboutBio>
             <ImgBio>
               <Image
-                style={{ height: 120, backgroundColor: theme.surface, borderRadius: 100 }}
+                style={{ height: 120, borderRadius: 100, aspectRatio:1, objectFit: 'cover' }}
                 width={125}
                 height={125}
                 src={'/images/astronauta.webp'}

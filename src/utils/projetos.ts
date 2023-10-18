@@ -23,19 +23,19 @@ export const ProjectList: IProject[] = [
     demo_url: 'https://pomodoroweb.netlify.app/'
   },
   {
-    img: ['/images/pcp-componentes.webp', "/images/pcp-editar-estruturas.webp", "/images/pcp-comparar.webp"],
+    img: ['/images/pcp-login.webp', "/images/pcp-componentes.webp", "/images/pcp-componentes-novo.webp", "/images/pcp-estruturas.webp", "/images/pcp-estruturas-detalhes.webp", "/images/pcp-estruturas-editar.webp", "/images/pcp-usuarios.webp"],
     title: 'PCP',
     description: 'Software web para cadastrar componentes e montar estruturas de um projeto eletrônico.',
     tech_stack: 'React, Typescript, NextJS, Bootstrap, Prime React, MongoDB',
   },
   {
-    img: ['/images/hdlinks-cover.webp', '/images/hdlinks-dashboard-cover.webp'],
+    img: ['/images/hdlinks-login.webp', '/images/hdlinks-home.webp', '/images/hdlinks-novo.webp'],
     title: 'HD Links',
     description: 'Aplicação speed dial com autenticação pelo firebase e uso do firestore para gravar os dados.',
     tech_stack: 'React, Typescript, NextJS, Bootstrap, Firebase',
   },
   {
-    img: ['/images/traefik-config-cover.webp', '/images/traefik-config-novo-cover.webp', '/images/traefik-config-save-cover.webp'],
+    img: ['/images/traefik-dashboard.webp', '/images/traefik-middlewares.webp', '/images/traefik-middlewares-novo.webp', '/images/traefik-routers.webp', '/images/traefik-services.webp',],
     title: 'Traefik Config',
     description: 'Uma interface para edição do arquivo de configuração do Trafiek .yml.',
     tech_stack: 'React, Typescript, NextJS, Bootstrap, yaml, Bcrypt',

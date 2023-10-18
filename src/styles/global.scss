@@ -123,6 +123,24 @@ body::-webkit-scrollbar-thumb {
 .p-galleria .p-galleria-indicators .p-galleria-indicator.p-highlight {
 }
 
+.p-card {
+  background-color: #110919;
+
+  p {
+    max-width: 600px;
+  }
+}
+
 .p-galleria-indicator.p-highlight button {
   background: #8a85ff !important;
+}
+
+.p-galleria .p-galleria-indicators {
+  display: flex;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.p-galleria-item-next, .p-galleria-item-prev {
+  background-color: rgba(0, 0, 0, 0.226);
 }

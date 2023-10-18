@@ -2,11 +2,20 @@ import { useState } from 'react';
 import { DivLinha } from 'styles/globalStyled';
 import { CgMouse } from 'react-icons/cg';
 import Image from 'next/image';
-import { HomeContainer, HomeWrapper, HomeLeft, HomeRight, ScrollDown, ScrollLink, Main, ImageBackground } from './HomeElements';
-import Header from '../Header/Header';
-import Dropdown from '../Dropdown/Dropdown';
+import {
+  HomeContainer,
+  HomeWrapper,
+  HomeLeft,
+  HomeRight,
+  ScrollDown,
+  ScrollLink,
+  Main,
+  ImageBackground
+} from './HomeElements';
+import Header from '../../components/Header/Header';
+import Dropdown from '../../components/Dropdown/Dropdown';
 import Typewriter from 'typewriter-effect';
-import Particle from '../Particle';
+import Particle from '../../components/Particle';
 import { theme } from 'theme/theme';
 
 const Home = () => {
@@ -33,7 +42,16 @@ const Home = () => {
                   options={{
                     cursorClassName: 'typeWriter_text',
                     wrapperClassName: 'typeWriter_text',
-                    strings: [' Frontend', ' Mobile', ' React Native', ' React', ' Typescript', 'Next JS', '', ''],
+                    strings: [
+                    ' Frontend', 
+                    ' Backend',
+                    ' Mobile', 
+                    ' React', 
+                    ' React Native', 
+                    ' Node JS',  
+                    ' Typescript',
+                     ' Next JS',
+                    ],
                     autoStart: true,
                     loop: true
                   }}
@@ -41,19 +59,13 @@ const Home = () => {
               </div>
             </DivLinha>
             <p>
-              Bem vindo, neste portfólio você irá encontrar alguns projetos públicos e privados desenvolvidos por mim. Entre em contato comigo por meio de alguma rede social, ou
-              discord!
+              Bem vindo, neste portfólio você irá encontrar alguns projetos públicos e privados desenvolvidos por mim.
+              Entre em contato comigo por meio de alguma rede social, ou discord!
             </p>
           </HomeLeft>
           <HomeRight>
             <ImageBackground>
-              <Image
-                style={{ objectFit: 'cover', aspectRatio: 1, backgroundColor: theme.background, borderRadius: '100%' }}
-                width={400}
-                height={400}
-                src={'/images/astronauta.webp'}
-                alt='imagem-astronauta'
-              />
+              <Image width={325} height={325} src={'/images/astronauta.webp'} alt='imagem-astronauta' />
             </ImageBackground>
           </HomeRight>
         </HomeWrapper>

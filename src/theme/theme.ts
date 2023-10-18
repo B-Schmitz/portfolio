@@ -8,5 +8,4 @@ export const theme = {
   title: '#fafafa',
   text: '#ededed',
   accent: '#8A85FF',
-  private: '#cf9e19'
 };

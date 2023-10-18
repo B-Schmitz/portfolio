@@ -24,12 +24,11 @@ export const Tech = styled.div`
 export const ImgBio = styled.div`
   display: flex;
   justify-content: center;
-  width: 100%;
   margin-bottom: 1rem;
   height: 120;
 `;
 
 export const TechName = styled.div`
   font-size: 14px;
-  color: ${theme.black};
+  color: ${theme.text};
 `;
