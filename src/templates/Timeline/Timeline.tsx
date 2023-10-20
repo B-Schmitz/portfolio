@@ -16,8 +16,8 @@ export default function Timeline() {
       title: 'Técnico de TI',
       subTitle: 'Prefeitura Municipal de Jaguaruna | 2019 - 2020',
       tasks: [
-        'Manutenção de computadores, notebooks e impressora',
-        'Configuração, reparo e dimensionamento de redes; cabeadas e WiFi',
+        'Manutenção de computadores, notebooks e impressoras',
+        'Configuração, reparo e dimensionamento de redes',
         'Gerenciamento do site da prefeitura municipal',
         'Atendimento a chamados de TI',
         'Gerenciamento de inventário do setor'
@@ -27,18 +27,18 @@ export default function Timeline() {
       title: 'Programador frontend',
       subTitle: 'Useall | 2021 - 2022',
       tasks: [
-        'Criação e personalização de relatórios em Active Reports',
-        'Desenvolvimento web com javascript e framework Ext JS',
+        'Criação e personalização de relatórios utilizando Active Reports',
+        'Desenvolvimento web com Javascript e framework EXT JS',
         'Manipulação de banco de dados e SQL',
         'Aplicação de boas práticas e metodologia ágil (scrum)',
-        'Mentor em treinamento de javascript e relatórios para novos funcionários'
+        'Mentor em treinamento de Javascript e relatórios para novos funcionários'
       ]
     },
     {
       title: 'Programador mobile',
       subTitle: 'Useall | 2022 - 2022',
       tasks: [
-        'Desenvolvimento de um aplicativo android em React Native;',
+        'Desenvolvimento de um aplicativo android em React Native',
         'Navigation, Reanimated, Maps, StyledComponents, ASyncStorage, Context API, Clean Arch',
         'TypeORM (Entidades, Migrations, QueryBuilder)'
       ]
@@ -47,11 +47,11 @@ export default function Timeline() {
       title: 'Programador fullstack',
       subTitle: 'HD Eletro | 2022 - Até o momento',
       tasks: [
-        'Desenvolvimento web com React, Next JS, Typescript, Bootstrap e PrimeReact',
+        'Desenvolvimento web com Next JS e Typescript',
         'Desenvolvimento mobile com React Native',
         'Migração de sistemas em angular para Next JS',
-        'Criação de componentes com Bootstrap e SCSS',
-        'Uso das ferramentas: Firebase, MongoDB  WebStorm, Jetbrains, Figma, Postman, Android Studio'
+        'Criação de componentes do zero com Bootstrap e SCSS',
+        'Uso das ferramentas Firebase, MongoDB, Docker, Jetbrains, Postman, Android Studio'
       ]
     }
   ];
@@ -72,7 +72,7 @@ export default function Timeline() {
     <ContainerTimeline id='experience'>
       <div className='Container'>
         <SectionTitle>Experiência</SectionTitle>
-        <TimelinePrime value={events}  align='alternate' className='' content={customizedContent} />
+        <TimelinePrime value={events}  align='alternate' content={customizedContent} />
       </div>
     </ContainerTimeline>
   );
