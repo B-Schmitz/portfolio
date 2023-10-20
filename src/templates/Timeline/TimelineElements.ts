@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ContainerTimeline = styled.section`
-  margin: 6rem 8rem;
+  margin: 6rem 0;
 `;
 
 export const List = styled.ul`
