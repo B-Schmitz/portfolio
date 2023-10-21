@@ -14,6 +14,9 @@ const Header = ({ toggle }: IHeaderProps) => {
           <NavLink className='menu-item' to='about' smooth>
             Sobre
           </NavLink>
+          <NavLink className='menu-item' to='experience' smooth>
+          Experiência
+          </NavLink>
           <NavLink className='menu-item' to='projects' smooth>
             Projetos
           </NavLink>

@@ -54,7 +54,7 @@ export const HomeLeft = styled.div`
     font-weight: 600;
   }
 
-  h5 {
+  h2 {
     font-size: 1.6rem;
     color: ${theme.text};
     margin-bottom: 1rem;

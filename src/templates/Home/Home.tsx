@@ -36,21 +36,21 @@ const Home = () => {
               Oi, eu sou o <strong style={{ color: theme.accent }}>Bernardo</strong>
             </h1>
             <DivLinha>
-              <h5>Desenvolvedor</h5>
+              <h2>Desenvolvedor</h2>
               <div style={{ paddingLeft: 10 }}>
                 <Typewriter
                   options={{
                     cursorClassName: 'typeWriter_text',
                     wrapperClassName: 'typeWriter_text',
                     strings: [
-                    ' Frontend', 
-                    ' Backend',
-                    ' Mobile', 
-                    ' React', 
-                    ' React Native', 
-                    ' Node JS',  
-                    ' Typescript',
-                     ' Next JS',
+                      ' Frontend',
+                      ' Backend',
+                      ' Mobile',
+                      ' React',
+                      ' React Native',
+                      ' Node JS',
+                      ' Typescript',
+                      ' Next JS'
                     ],
                     autoStart: true,
                     loop: true
@@ -69,9 +69,9 @@ const Home = () => {
             </ImageBackground>
           </HomeRight>
         </HomeWrapper>
-        <ScrollDown to='projects'>
+        <ScrollDown to='about'>
           <ScrollLink>
-            Scroola ai
+            Scrolla ai
             <CgMouse />
           </ScrollLink>
         </ScrollDown>
