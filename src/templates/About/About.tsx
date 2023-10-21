@@ -2,7 +2,6 @@ import { Technologies, Tech, TechName, ContactWrapper, ImgBio } from './AboutEle
 import { stackList } from 'utils';
 import { AboutBio, BigCard, SectionTitle } from 'styles/globalStyled';
 import Image from 'next/image';
-import { theme } from 'theme/theme';
 
 function About() {
   return (
@@ -11,15 +10,6 @@ function About() {
         <SectionTitle>Sobre</SectionTitle>
         <BigCard>
           <AboutBio>
-            <ImgBio>
-              <Image
-                style={{ height: 120, borderRadius: 100, aspectRatio:1, objectFit: 'cover' }}
-                width={125}
-                height={125}
-                src={'/images/astronauta.webp'}
-                alt='imagem-astronauta'
-              />
-            </ImgBio>
             Hello world! Me chamo <strong>Bernardo Schmitz</strong>, sou formado em Ciência da computação pela UNESC e
             trabalho como programador front-end e mobile. Abaixo algumas das principais tecnologias em que trabalho.
           </AboutBio>

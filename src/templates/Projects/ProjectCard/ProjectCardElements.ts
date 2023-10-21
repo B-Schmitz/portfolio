@@ -42,7 +42,7 @@ export const CardRight = styled.div`
   border-radius: 8px;
 
   h4 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 900;
   }
 
@@ -50,7 +50,7 @@ export const CardRight = styled.div`
     max-width: 400px;
     margin-top: 10px;
     margin-bottom: 1rem;
-    color: rgba(0, 0, 0, 0.815);
+    color: #fafafa;
     text-align: center;
 
     @media (min-width: 992px) {

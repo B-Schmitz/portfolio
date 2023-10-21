@@ -22,7 +22,7 @@ function ProjectCard() {
   ];
 
   const itemTemplate = (item: any) => {
-    return <Image src={item} alt={item.alt} width={'1440px'} height={'800px'} />;
+    return <Image src={item} alt={item.title} width={'1440px'} height={'800px'} />;
   };
 
   return (
@@ -42,7 +42,7 @@ function ProjectCard() {
           </CardLeft>
           <CardRight>
             <h4>{list.title}</h4>
-            <h6>{list.description}</h6>
+            <p>{list.description}</p>
             <Stack>
               <span className='stackTitle'>Tech Stack -</span>
               <span className='tags'>{list.tech_stack}</span>

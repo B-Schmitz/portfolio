@@ -82,8 +82,8 @@ export const stackList: IStack[] = [
     img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
     name: 'MongoDB'
 }, {
-  img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
-      name: 'Firebase'
+    img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
+    name: 'Firebase'
 }, {
     img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg',
     name: 'Tailwind CSS '
