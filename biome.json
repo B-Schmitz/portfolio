@@ -1,0 +1,36 @@
+{
+    "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+    "formatter": {
+        "indentStyle": "space",
+        "lineEnding": "crlf",
+        "enabled": true,
+        "indentWidth": 4,
+        "lineWidth": 100,
+        "bracketSpacing": true
+    },
+    "linter": {
+        "rules": {
+            "suspicious": {
+                "noExplicitAny": "off",
+                "useNamespaceKeyword": "off",
+                "noConstEnum": "warn",
+                "noArrayIndexKey": "off",
+                "noPrototypeBuiltins": "off",
+                "noAssignInExpressions": "off"
+            },
+            "style": {
+                "useImportType": "off",
+                "useNumberNamespace": "off",
+                "noParameterAssign": "off",
+                "noUnusedTemplateLiteral": "off"
+            },
+            "correctness": {
+                "useExhaustiveDependencies": "off"
+            },
+            "a11y": {
+                "useKeyWithClickEvents": "off",
+                "noAutofocus": "off"
+            }
+        }
+    }
+}
