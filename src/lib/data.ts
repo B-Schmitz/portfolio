@@ -49,6 +49,17 @@ export const data = {
             image: "/pomodoro.png",
             imageHint: "pomodoro-web",
         },
+         {
+            id: 3,
+            title: "Papum [WIP]",
+            description:
+                "Um chat bate-papo em tempo real, onde você pode criar salas ou encontrar uma conversa aleatória.",
+            techStack: ["Next JS", "Typescript", "Ably", "Framer Motion", "Tailwind CSS", "Zod", "Radix UI"],
+            githubUrl: "",
+            liveUrl: "",
+            image: "/papum.png",
+            imageHint: "papum",
+        },
     ] as Project[],
     experiences: [
         {
