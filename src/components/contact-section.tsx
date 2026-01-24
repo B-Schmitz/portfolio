@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { Toaster, toast } from "react-hot-toast";
 
 export function ContactSection() {
   const [status, setStatus] = useState<"idle"|"sending"|"success"|"error">("idle");
@@ -8,6 +9,7 @@ export function ContactSection() {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setStatus("sending");
+    const toastId = toast.loading("Enviando mensagem...");
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
@@ -17,16 +19,20 @@ export function ContactSection() {
       if (res.ok) {
         setStatus("success");
         setForm({ name: "", email: "", message: "" });
+        toast.success("Mensagem enviada com sucesso! 🚀", { id: toastId });
       } else {
         setStatus("error");
+        toast.error("Erro ao enviar. Tente novamente.", { id: toastId });
       }
     } catch {
       setStatus("error");
+      toast.error("Erro ao enviar. Tente novamente.", { id: toastId });
     }
   }
 
   return (
     <section id="contact" className="py-24 sm:py-32 bg-background/50">
+      <Toaster position="top-center" />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-xl">
         <h2 className="text-3xl font-bold mb-4 text-foreground">Contato</h2>
         <p className="mb-8 text-muted-foreground">Preencha o formulário para enviar uma mensagem diretamente para meu e-mail.</p>
@@ -63,13 +69,15 @@ export function ContactSection() {
             className="w-full bg-primary text-primary-foreground rounded py-2 font-semibold hover:bg-primary/90 transition"
             disabled={status === "sending"}
           >
-            {status === "sending" ? "Enviando..." : "Enviar"}
+            {status === "sending" ? (
+              <span className="flex items-center justify-center gap-2 animate-pulse">
+                <svg className="w-5 h-5 animate-spin" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" /><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z" /></svg>
+                Enviando...
+              </span>
+            ) : "Enviar"}
           </button>
-          {status === "success" && <p className="text-green-600 mt-2">Mensagem enviada com sucesso!</p>}
-          {status === "error" && <p className="text-red-600 mt-2">Erro ao enviar. Tente novamente.</p>}
         </form>
       </div>
     </section>
   );
 }
-
