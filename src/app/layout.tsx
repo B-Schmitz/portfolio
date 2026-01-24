@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
+import { Dock } from "@/components/dock";
 
 export const metadata: Metadata = {
     title: "Bernardo Schmitz | Desenvolvedor Fullstack",
@@ -66,6 +67,7 @@ export default function RootLayout({
             <body className={cn("font-body antialiased relative")}>
                 <ThemeProvider  >
                     {children}
+                    <Dock />
                 </ThemeProvider>
             </body>
         </html>

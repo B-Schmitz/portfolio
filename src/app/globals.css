@@ -4,24 +4,24 @@
 
 @layer base {
     :root {
-        --background: 0 0% 100%;
-        --foreground: 270 10% 15%;
-        --card: 0 0% 100%;
-        --card-foreground: 270 10% 15%;
-        --popover: 0 0% 100%;
-        --popover-foreground: 270 10% 15%;
+        --background: 270 40% 98%; /* Lilás bem claro, menos branco */
+        --foreground: 265 30% 18%; /* Roxo escuro para contraste melhor */
+        --card: 270 40% 98%;
+        --card-foreground: 265 30% 18%;
+        --popover: 270 40% 98%;
+        --popover-foreground: 265 30% 18%;
         --primary: 272 80% 65%; /* Roxo vibrante */
         --primary-foreground: 272 100% 98%;
         --secondary: 285 40% 95%; /* Lilás claro */
-        --secondary-foreground: 272 40% 30%;
+        --secondary-foreground: 265 40% 30%;
         --muted: 275 30% 92%; /* Lavanda suave */
-        --muted-foreground: 275 10% 50%;
+        --muted-foreground: 265 20% 40%; /* Mais escuro para contraste */
         --accent: 292 70% 80%; /* Rosa lavanda */
         --accent-foreground: 292 100% 20%;
         --destructive: 340 84% 60%;
         --destructive-foreground: 0 0% 98%;
-        --border: 272 30% 85%;
-        --input: 272 30% 85%;
+        --border: 265 30% 85%;
+        --input: 265 30% 85%;
         --ring: 272 80% 65%;
         --radius: 0.5rem;
     }
@@ -87,5 +87,9 @@
     }
     .animate-explode {
         animation: explode 0.3s ease-out forwards;
+    }
+
+    .dock-btn {
+        @apply flex flex-col items-center justify-center px-3 py-2 rounded-xl text-muted-foreground hover:text-primary hover:bg-primary/10 transition;
     }
 }
