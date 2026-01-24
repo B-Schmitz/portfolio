@@ -55,11 +55,13 @@ export function Projects() {
                                                     alt={project.title}
                                                     fill
                                                     sizes="(max-width: 768px) 100vw, 50vw"
-                                                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                                                    className="object-cover transition-transform duration-300 group-hover:scale-105 border border-primary/20 shadow-sm"
                                                     data-ai-hint={project.imageHint}
                                                 />
                                             </div>
-                                            <CardTitle className="pt-4">{project.title}</CardTitle>
+                                            <CardTitle className="pt-4 text-lg font-semibold text-foreground text-center">
+                                                {project.title}
+                                            </CardTitle>
                                         </CardHeader>
                                         <CardContent className="flex-grow">
                                             <div className="flex flex-wrap gap-2 mb-4">

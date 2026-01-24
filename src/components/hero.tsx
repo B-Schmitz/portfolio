@@ -4,6 +4,7 @@ import { motion } from "@/components/motion";
 import { Button } from "@/components/ui/button";
 import { strings } from "@/lib/strings";
 import { LinkIcon } from "@phosphor-icons/react";
+import { Typewriter } from "@/components/ui/typewriter";
 
 const containerVariants = {
     hidden: { opacity: 0 },
@@ -32,12 +33,13 @@ export function Hero() {
             id="about"
             className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background"
         >
-            <div className="absolute inset-0 z-0">
+            {/* Efeito de background animado removido */}
+            {/* <div className="absolute inset-0 z-0">
                 <div
                     className="absolute inset-0 bg-gradient-to-tr from-primary/10 via-background to-accent/10 animate-[gradient_15s_ease_infinite]"
                     style={{ backgroundSize: "200% 200%" }}
                 />
-            </div>
+            </div> */}
 
             <motion.div
                 className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-12 px-4 sm:px-6 lg:px-8 z-10"
@@ -56,10 +58,13 @@ export function Hero() {
                         {strings.hero.name}
                     </motion.h1>
                     <motion.p
-                        className="mt-4 text-xl md:text-2xl text-primary"
+                        className="mt-4 text-xl md:text-2xl text-primary min-h-[2.5rem]"
                         variants={itemVariants}
                     >
-                        {strings.hero.title}
+                        <Typewriter
+                          prefix="Desenvolvedor "
+                          words={["JavaScript", "TypeScript", "Node.js", "React", "Next.js", "Front-end", "Back-end", "Fullstack"]}
+                        />
                     </motion.p>
                     <motion.p
                         className="mt-6 text-base md:text-lg text-muted-foreground"

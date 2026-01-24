@@ -12,7 +12,7 @@ export const strings = {
     },
     projects: {
         title: "Meus Projetos",
-        subtitle: "Uma lista de projetos pessoais que desenvolvo nas horas vagas.",
+        subtitle: "Uma lista de projetos que desenvolvi ou estou desenvolvendo nas horas vagas.",
         viewButton: "Acessar",
         gitLink: "Código fonte",
     },

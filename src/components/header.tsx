@@ -71,16 +71,15 @@ export function Header() {
             transition={{ duration: 0.5 }}
         >
             <div className="container mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
-                <Link href="/" className="flex items-center gap-2">
+                <Link href="/" className="flex items-center">
                     <Image
                         src="/astronauta.png"
                         alt={strings.hero.avatarAlt}
-                        width={32}
-                        height={32}
-                        className="rounded-full"
+                        width={48}
+                        height={48}
+                        className="rounded-full shadow-md border border-primary/30"
                         data-ai-hint="astronaut space"
                     />
-                    <span className="text-xl font-bold text-foreground">{strings.hero.name}</span>
                 </Link>
 
                 {/* Desktop Nav */}
