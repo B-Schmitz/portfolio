@@ -1,14 +1,4 @@
-@import "tailwindcss" source(none);
-@source "../src";
-@import "tw-animate-css";
-
-@custom-variant dark (&:is(.dark *));
-
-/*
- * Design system — "Editorial glass"
- * Light editorial paper, ink typography, one quiet blue accent.
- * Fonts: Inter (body/display), JetBrains Mono (labels/numbers).
- */
+@import "tailwindcss";
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
@@ -44,9 +34,9 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(0.97 0.003 264.5); /* paper #f4f5f7 */
-  --foreground: oklch(0.21 0.008 274.5); /* ink #17181c */
-  --card: oklch(1 0 0); /* panel #ffffff */
+  --background: oklch(0.97 0.003 264.5);
+  --foreground: oklch(0.21 0.008 274.5);
+  --card: oklch(1 0 0);
   --card-foreground: oklch(0.21 0.008 274.5);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.21 0.008 274.5);
@@ -55,13 +45,13 @@
   --secondary: oklch(0.945 0.003 264.5);
   --secondary-foreground: oklch(0.21 0.008 274.5);
   --muted: oklch(0.945 0.003 264.5);
-  --muted-foreground: oklch(0.538 0.013 269.4); /* #6b6e76 */
+  --muted-foreground: oklch(0.538 0.013 269.4);
   --accent: oklch(0.945 0.003 264.5);
   --accent-foreground: oklch(0.21 0.008 274.5);
-  --brand: oklch(0.532 0.204 264.7); /* #2f5fe0 */
+  --brand: oklch(0.532 0.204 264.7);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.925 0.006 264.5); /* line #e4e6ea */
+  --border: oklch(0.925 0.006 264.5);
   --input: oklch(0.925 0.006 264.5);
   --ring: oklch(0.532 0.204 264.7);
 }
@@ -89,23 +79,21 @@
   --ring: oklch(0.551 0.027 264.364);
 }
 
-@layer base {
-  * {
-    border-color: var(--color-border);
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  body {
-    background-color: var(--color-background);
-    color: var(--color-foreground);
-    font-family: var(--font-sans);
-  }
+html {
+  scroll-behavior: smooth;
 }
 
-/* Restrained entrance: a single soft rise for hero elements */
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+* {
+  box-sizing: border-box;
+}
+
 @keyframes rise {
   from {
     opacity: 0;
@@ -117,6 +105,6 @@
   }
 }
 
-@utility rise {
+.rise {
   animation: rise 0.6s cubic-bezier(0.32, 0.72, 0, 1) both;
 }
