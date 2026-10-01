@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Bernardo Schmitz | Desenvolvedor Fullstack",
+  title: "Bernardo Schmitz",
   description:
     "Currículo de Bernardo Schmitz, desenvolvedor fullstack com 5 anos de experiência em React, Next.js, React Native e Node.js.",
   icons: {
